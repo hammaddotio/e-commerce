@@ -1,0 +1,21 @@
+{
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.2"
+  },
+  "name": "shopping-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {},
+  "scripts": {
+    "server": "npm run dev --prefix ./server",
+    "client": "npm run dev --prefix ./client",
+    "dev": "concurrently \"yarn server\" \"yarn client\"",
+    "dep": "concurrently \"npm i --prefix ./server\" \"npm i --prefix ./client\"",
+    "dp": "concurrently \"npm i --prefix ./server\" \"npm i --prefix ./client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
